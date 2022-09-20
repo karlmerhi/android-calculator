@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="20"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/DodgerBlue">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Assignment1" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/status_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_one"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="0.1"
+            android:backgroundTint="@color/DodgerBlue"
+            android:padding="15dp"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textFontWeight="1"
+            android:onClick="ButtonMethod"
+            />
+
+        <Button
+            android:id="@+id/button_two"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:backgroundTint="@color/DodgerBlue"
+            android:padding="15dp"
+            android:text="2"
+            android:textColor="@color/white"
+            android:onClick="ButtonMethod"
+            />
+
+        <Button
+            android:id="@+id/button_three"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:backgroundTint="@color/DodgerBlue"
+            android:padding="15dp"
+            android:text="3"
+            android:textColor="@color/white"
+            android:onClick="ButtonMethod"
+            />
+
+        <Button
+            android:id="@+id/button_plus"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:layout_weight="0.1"
+            android:backgroundTint="@color/DodgerBlue"
+            android:contentDescription="@string/app_name"
+            android:padding="15dp"
+            android:text="+"
+            android:textColor="@color/white"
+            android:onClick="ButtonMethod"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_four"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="0.1"
+            android:backgroundTint="@color/DodgerBlue"
+            android:padding="15dp"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textFontWeight="1"
+            android:onClick="ButtonMethod"
+            />
+
+        <Button
+            android:id="@+id/button_five"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:backgroundTint="@color/DodgerBlue"
+            android:padding="15dp"
+            android:text="5"
+            android:textColor="@color/white"
+            android:onClick="ButtonMethod"
+            />
+
+        <Button
+            android:id="@+id/button_six"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:backgroundTint="@color/DodgerBlue"
+            android:padding="15dp"
+            android:text="6"
+            android:textColor="@color/white"
+            android:onClick="ButtonMethod"
+            />
+
+        <Button
+            android:id="@+id/button_minus"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:layout_weight="0.1"
+            android:backgroundTint="@color/DodgerBlue"
+            android:contentDescription="@string/app_name"
+            android:padding="15dp"
+            android:text="-"
+            android:textColor="@color/white"
+            android:onClick="ButtonMethod"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_seven"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="0.1"
+            android:backgroundTint="@color/DodgerBlue"
+            android:padding="15dp"
+            android:text="7"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textFontWeight="1"
+            android:onClick="ButtonMethod"
+            />
+
+        <Button
+            android:id="@+id/button_eight"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:backgroundTint="@color/DodgerBlue"
+            android:padding="15dp"
+            android:text="8"
+            android:textColor="@color/white"
+            android:onClick="ButtonMethod"
+            />
+
+        <Button
+            android:id="@+id/button_nine"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:backgroundTint="@color/DodgerBlue"
+            android:padding="15dp"
+            android:text="9"
+            android:textColor="@color/white"
+            android:onClick="ButtonMethod"
+            />
+
+        <Button
+            android:id="@+id/button_multiply"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:layout_weight="0.1"
+            android:backgroundTint="@color/DodgerBlue"
+            android:contentDescription="@string/app_name"
+            android:padding="15dp"
+            android:text="*"
+            android:textColor="@color/white"
+            android:onClick="ButtonMethod"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_clear"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="0.1"
+            android:backgroundTint="@color/DodgerBlue"
+            android:padding="15dp"
+            android:text="C"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textFontWeight="1"
+            android:onClick="ClearButton"
+            />
+
+        <Button
+            android:id="@+id/button_zero"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:backgroundTint="@color/DodgerBlue"
+            android:padding="15dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:onClick="ButtonMethod"
+            />
+
+        <Button
+            android:id="@+id/button_equals"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:backgroundTint="@color/DodgerBlue"
+            android:padding="15dp"
+            android:text="="
+            android:textColor="@color/white"
+            android:onClick="EqualButton"
+            />
+
+        <Button
+            android:id="@+id/button_divide"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:layout_weight="0.1"
+            android:backgroundTint="@color/DodgerBlue"
+            android:contentDescription="@string/app_name"
+            android:padding="15dp"
+            android:text="/"
+            android:textColor="@color/white"
+            android:onClick="ButtonMethod"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_advanced"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_weight=".5"
+            android:backgroundTint="@color/DimGray"
+            android:padding="0dp"
+            android:text="ADVANCE - WITH HISTORY"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textFontWeight="1"
+            android:onClick="AdvancedButton"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_gravity="center"
+        android:layout_weight="10.5"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"
+        />
+</LinearLayout>
