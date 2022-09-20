@@ -118,21 +118,20 @@ public class MainActivity extends AppCompatActivity {
 
             if(advanced) {
                 history.setText(history.getText().toString() + "\n" + textView.getText().toString());
-            } else {
-                history.setText("");
-
             }
         }
     }
 
     public void AdvancedButton(View v) {
 
+        TextView history = (TextView) this.findViewById(R.id.history);
         Button advanced_button = (Button) findViewById(R.id.button_advanced);
         String colorId = "#FA8072";
         int textColor = android.R.color.white;
 
         if (advanced) {
             advanced = false;
+            history.setText("");
             colorId = "#1E90FF";
             advanced_button.setText("STANDARD - NO HISTORY");
         } else {
